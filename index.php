@@ -56,22 +56,22 @@ $alfry = new Cane("Alfry","Maschio","Basenji","Vivace e Attivo");
 $lupetto = new Cane("Lupetto","Femmina","Barboncino","Felice e Resistente");
 
 class Pc {
-    public $MotherBoard;
-    public $CPU;
-    public $SchedaVideo;
-    public $Alimentatore;
+    public $motherBoard;
+    public $cpu;
+    public $schedaVideo;
+    public $alimentatore;
 
-    function __construct(string $MotherBoard,string $CPU,string $SchedaVideo,int $Alimentatore){
-        $this->MotherBoard = $MotherBoard;
-        $this->CPU = $CPU;
-        $this->SchedaVideo = $SchedaVideo;
-        $this->Alimentatore = $Alimentatore;
+    function __construct(string $motherBoard,string $cpu,string $schedaVideo,int $alimentatore){
+        $this->motherBoard = $motherBoard;
+        $this->cpu = $cpu;
+        $this->schedaVideo = $schedaVideo;
+        $this->alimentatore = $alimentatore;
     }
     function __destruct() {
-        echo "<h3>Pc :</h3> : <br> Motherboard : {$this->MotherBoard},<br>
-            CPU : {$this->CPU},<br>
-            Scheda Video : {$this->SchedaVideo},<br>
-            Alimentatore : {$this->Alimentatore} W <br>";
+        echo "<h3>Pc :</h3> : <br> Motherboard : {$this->motherBoard},<br>
+            CPU : {$this->cpu},<br>
+            Scheda Video : {$this->schedaVideo},<br>
+            alimentatore : {$this->alimentatore} W <br>";
     }
 }
 
